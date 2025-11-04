@@ -13,11 +13,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About Us */}
           <div>
-            <h3 className="text-xl font-bold mb-4">À Propos de Nous</h3>
+            <h3 className="text-xl font-bold mb-4">À Propos d&apos;EDHA</h3>
             <p className="text-gray-400 leading-relaxed">
-              Demwazel est une ONG internationale dédiée à l&apos;autonomisation 
-              et au bien-être des jeunes filles à travers l&apos;éducation, 
-              la protection et l&apos;engagement communautaire.
+              EDHA est une organisation non gouvernementale dédiée à l&apos;autonomisation 
+              et au développement holistique des jeunes haïtiens à travers l&apos;éducation, 
+              la formation technique et la promotion du développement social et économique.
             </p>
           </div>
 
@@ -26,32 +26,32 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Liens Rapides</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#accueil" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="#accueil" className="text-gray-400 hover:text-blue-400 transition-colors">
                   Accueil
                 </Link>
               </li>
               <li>
-                <Link href="#apropos" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="#apropos" className="text-gray-400 hover:text-blue-400 transition-colors">
                   À propos
                 </Link>
               </li>
               <li>
-                <Link href="#initiatives" className="text-gray-400 hover:text-pink-400 transition-colors">
-                  Nos initiatives
+                <Link href="#programmes" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  Programmes
                 </Link>
               </li>
               <li>
-                <Link href="#don" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="#formations" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  Formations
+                </Link>
+              </li>
+              <li>
+                <Link href="#don" className="text-gray-400 hover:text-blue-400 transition-colors">
                   Faire un don
                 </Link>
               </li>
               <li>
-                <Link href="#blog" className="text-gray-400 hover:text-pink-400 transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="#contact" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="#contact" className="text-gray-400 hover:text-blue-400 transition-colors">
                   Contact
                 </Link>
               </li>
@@ -65,20 +65,20 @@ export default function Footer() {
               <li>
                 <strong className="text-white">Adresse:</strong>
                 <br />
-                New York, USA
+                Port-au-Prince, Haïti
               </li>
               <li>
                 <strong className="text-white">Téléphone:</strong>
                 <br />
-                <a href="tel:+13474634211" className="hover:text-pink-400 transition-colors">
-                  +1 347 463 4211
+                <a href="tel:+509XXXXXXXX" className="hover:text-blue-400 transition-colors">
+                  +509 XXXX-XXXX
                 </a>
               </li>
               <li>
                 <strong className="text-white">Email:</strong>
                 <br />
-                <a href="mailto:contact@demwazel.org" className="hover:text-pink-400 transition-colors">
-                  contact@demwazel.org
+                <a href="mailto:info@edha.org" className="hover:text-blue-400 transition-colors">
+                  info@edha.org
                 </a>
               </li>
             </ul>
@@ -88,11 +88,11 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 Demwazel. All rights reserved.
+            © 2025 EDHA - Éducation et Développement pour le Progrès d&apos;Haïti. Tous droits réservés.
           </p>
           <button
             onClick={scrollToTop}
-            className="text-pink-400 hover:text-pink-300 transition-colors font-semibold text-sm"
+            className="text-blue-400 hover:text-blue-300 transition-colors font-semibold text-sm"
           >
             Retour en haut ↑
           </button>

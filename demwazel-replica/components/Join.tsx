@@ -3,24 +3,24 @@ import Link from 'next/link';
 export default function Join() {
   const cards = [
     {
-      title: 'Pour les Filles et Jeunes Femmes',
+      title: 'Pour les Étudiants',
       description:
-        'Inscrivez-vous gratuitement pour bénéficier de notre programme de mentorat et de nos ateliers de formation.',
-      buttonText: 'Inscris-toi',
-      buttonHref: '#inscription-filles',
+        'Inscrivez-vous gratuitement à nos programmes de formation et bénéficiez d\'une éducation de qualité, d\'un mentorat et d\'opportunités de développement personnel et professionnel.',
+      buttonText: 'Inscrivez-vous',
+      buttonHref: '#inscription-etudiants',
     },
     {
-      title: 'Pour les Mentors et Professionnels',
+      title: 'Pour les Bénévoles',
       description:
-        'Partagez votre expérience et vos connaissances pour aider les jeunes filles à réaliser leurs rêves.',
-      buttonText: 'Inscris-toi',
-      buttonHref: '#inscription-mentors',
+        'Partagez votre temps, vos compétences et votre passion pour l\'éducation. Devenez formateur, mentor ou contribuez à nos projets communautaires.',
+      buttonText: 'Rejoignez-nous',
+      buttonHref: '#inscription-benevoles',
     },
     {
       title: 'Pour les Partenaires',
       description:
-        'Devenez sponsor ou soutenez nos activités pour amplifier notre impact dans les communautés.',
-      buttonText: 'Inscris-toi',
+        'Organisations, entreprises et institutions : collaborez avec nous pour amplifier notre impact et créer des opportunités durables pour les jeunes haïtiens.',
+      buttonText: 'Partenariat',
       buttonHref: '#inscription-partenaires',
     },
   ];
@@ -30,10 +30,11 @@ export default function Join() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            REJOINDRE DEMWAZÈL
+            REJOIGNEZ NOTRE IMPACT
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Rejoignez-nous et faites partie des histoires inspirantes de vies transformées.
+            Votre soutien est essentiel pour poursuivre notre mission. Il existe plusieurs 
+            façons de collaborer avec EDHA et de faire partie du changement en Haïti.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,7 +51,7 @@ export default function Join() {
               </p>
               <Link
                 href={card.buttonHref}
-                className="block text-center bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-colors duration-200 font-semibold"
+                className="block text-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-200 font-semibold"
               >
                 {card.buttonText}
               </Link>

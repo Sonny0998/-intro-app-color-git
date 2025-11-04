@@ -1,8 +1,8 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import ThreePillars from '@/components/ThreePillars';
+import FourAreas from '@/components/FourAreas';
 import About from '@/components/About';
-import Programs from '@/components/Programs';
+import TrainingAreas from '@/components/TrainingAreas';
 import CTABanner from '@/components/CTABanner';
 import Statistics from '@/components/Statistics';
 import Join from '@/components/Join';
@@ -15,9 +15,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <ThreePillars />
+        <FourAreas />
         <About />
-        <Programs />
+        <TrainingAreas />
         <CTABanner />
         <Statistics />
         <Join />

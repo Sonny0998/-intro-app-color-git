@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Logo from './Logo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,9 +10,9 @@ export default function Header() {
   const menuItems = [
     { label: 'Accueil', href: '#accueil' },
     { label: 'À propos', href: '#apropos' },
-    { label: 'Nos initiatives', href: '#initiatives' },
+    { label: 'Programmes', href: '#programmes' },
+    { label: 'Formations', href: '#formations' },
     { label: 'Faire un don', href: '#don' },
-    { label: 'Blog', href: '#blog' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -20,8 +21,8 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-gray-900">
-            Demwazel
+          <Link href="/" className="flex items-center">
+            <Logo className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -30,23 +31,23 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-gray-700 hover:text-pink-600 transition-colors duration-200"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
               >
                 {item.label}
               </Link>
             ))}
             <Link
               href="#don"
-              className="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-colors duration-200 font-semibold"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-200 font-semibold"
             >
-              Donnez maintenant
+              Soutenez-nous
             </Link>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-pink-600 hover:bg-gray-100"
+            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100"
             aria-label="Main Menu"
           >
             <svg
@@ -75,7 +76,7 @@ export default function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="text-gray-700 hover:text-pink-600 transition-colors duration-200 py-2"
+                  className="text-gray-700 hover:text-blue-600 transition-colors duration-200 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -83,10 +84,10 @@ export default function Header() {
               ))}
               <Link
                 href="#don"
-                className="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-colors duration-200 font-semibold text-center"
+                className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-200 font-semibold text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Donnez maintenant
+                Soutenez-nous
               </Link>
             </nav>
           </div>

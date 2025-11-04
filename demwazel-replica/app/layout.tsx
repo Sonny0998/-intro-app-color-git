@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Demwazel - Donnons du zèle à nos elles",
-  description: "Organisation dédiée à l'autonomisation et au bien-être des jeunes filles",
+  title: "EDHA - Éducation et Développement pour le Progrès d'Haïti",
+  description: "Organisation non gouvernementale dédiée à l'autonomisation et au développement holistique des jeunes haïtiens à travers l'éducation, la formation technique et la promotion du développement social et économique.",
 };
 
 export default function RootLayout({

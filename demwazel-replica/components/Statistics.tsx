@@ -8,10 +8,10 @@ export default function Statistics() {
   const sectionRef = useRef<HTMLElement>(null);
 
   const stats = [
-    { value: 500, label: 'Filles directement touchées', suffix: '+' },
-    { value: 2000, label: 'Bénéficiaires indirects', suffix: '+' },
-    { value: 150, label: 'Réseau de mentors internationaux', suffix: '+' },
-    { value: 25, label: 'Organisations partenaires', suffix: '+' },
+    { value: 1000, label: 'Jeunes formés', suffix: '+' },
+    { value: 9, label: 'Domaines de formation', suffix: '' },
+    { value: 50, label: 'Communautés touchées', suffix: '+' },
+    { value: 30, label: 'Partenaires éducatifs', suffix: '+' },
   ];
 
   useEffect(() => {
@@ -64,13 +64,17 @@ export default function Statistics() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            IMPACT ET RÉSULTATS
+            NOTRE IMPACT
           </h2>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            Depuis notre création, EDHA a transformé la vie de milliers de jeunes haïtiens 
+            à travers des programmes éducatifs innovants et inclusifs.
+          </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center p-6">
-              <div className="text-5xl md:text-6xl font-bold text-pink-600 mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-blue-600 mb-4">
                 {counts[index].toLocaleString()}{stat.suffix}
               </div>
               <p className="text-gray-700 font-semibold">{stat.label}</p>
